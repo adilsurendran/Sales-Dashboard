@@ -1,0 +1,344 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aligned Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="livecss.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid py-2">
+    <div class="row rowadjust">
+      <div class="col-5 col-lg-5 bg-white rounded shadow-sm ">
+        <!-- Form Layout -->
+        <div class="form-group-row">
+          <label for="customerName" class="form-label fw-bold">Customer Name:</label>
+          <input type="text" class="form-control form-control-sm" id="customerName" placeholder="Enter customer name" />
+        </div>
+
+        <div class="form-group-row">
+          <label for="salesmanName" class="form-label fw-bold">Salesman Name:</label>
+          <input type="text" class="form-control form-control-sm" id="salesmanName" placeholder="Enter salesman name" />
+        </div>
+
+        <div class="form-group-row">
+          <label for="invoiceType" class="form-label fw-bold">Type of Invoice:</label>
+          <input type="text" class="form-control form-control-sm me-2" id="invoiceType" placeholder="Invoice type" />
+          <label for="session" class=" fw-bold pe-1">Session:</label>
+          <input type="text" class="form-control form-control-sm" id="session" placeholder="Session" />
+        </div>
+
+        <div class="form-group-row">
+          <label for="address" class="form-label fw-bold">Address:</label>
+          <input type="text" class="form-control form-control-sm me-2" id="address" placeholder="Enter address" />
+          <label for="online" class=" fw-bold pe-1">Online:</label>
+          <input type="text" class="form-control form-control-sm" id="online" placeholder="Online" />
+        </div>
+
+        <div class="form-group-row">
+          <label for="remark" class="form-label fw-bold">Remark:</label>
+          <input type="text" class="form-control form-control-sm" id="remark" placeholder="Enter remark" />
+        </div>
+
+        <div class="form-group-row">
+          <label for="quotationNo" class="form-label fw-bold">Quotation No:</label>
+          <input type="text" class="form-control form-control-sm" id="quotationNo" placeholder="Enter quotation number" />
+        </div>
+      </div>
+
+      <div class="col-5 col-lg-5 d-flex flex-column justify-content-between bg-white rounded shadow-sm">
+        <div class="form-group-row">
+          <label for="Invoicenumber" class="form-label fw-bold">Invoice number:</label>
+          <input type="text" class="form-control form-control-sm" id="customerName" placeholder="Enter invoice number" />
+        </div>
+        <div class="form-group-row">
+          <label for="customerName" class="form-label fw-bold">Invoice Date:</label>
+          <input type="date" class="form-control form-control-sm" id="customerName" placeholder="Enter customer name" />
+        </div>
+        <div class="form-group-row">
+          <label for="Invoicenumber" class="form-label fw-bold">Time:</label>
+          <input type="text" class="form-control form-control-sm" id="customerName" placeholder="Enter time" />
+        </div>
+        <div class="form-group-row">
+          <label for="Invoicenumber" class="form-label fw-bold">User:</label>
+          <input type="text" class="form-control form-control-sm" id="customerName" placeholder="Enter user" />
+        </div>
+        <div class="form-group-row">
+          <label for="Invoicenumber" class="form-label fw-bold">Service No:</label>
+          <input type="text" class="form-control form-control-sm" id="customerName" placeholder="Enter service number" />
+        </div>
+      </div>
+
+      <div class="col-2 bg-white rounded shadow-sm">
+        <label for="selectboxcol-2">Price Type</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Retail price</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <div class="d-flex gap-1 pt-3">
+          <button type="button" class="btn text-black w-50 btn-sm-text" style="background-color: #99ff99; ">P.Switch</button>
+          <button type="button" class="btn text-black w-50 btn-sm-text" style="background-color: #99ff99; ">Load</button>
+        </div>
+        <marquee behavior="scroll" direction="left" class="fw-bold mt-4 py-2" style="background-color: rgb(247, 247, 247); color: blueviolet;">DELIVERY</marquee>
+      </div>
+    </div>
+  </div>
+
+        <!-- head section ends here  -->
+
+  <div class="container-fluid border border-2 heightfixedtable">
+    <div class="table-responsive  mb-1" style="max-height: 280px; overflow-y: auto;">
+  <table class="table table-bordered table-hover">
+  <thead>
+    <tr class="table-secondary">
+      <th scope="col">sl.no</th>
+      <th scope="col" class="pe-5">ItemCode</th>
+      <th scope="col">Item Name</th>
+      <th scope="col">Unit</th>
+      <th scope="col">OldRate</th>
+      <th scope="col">Qnty</th>
+      <th scope="col">Store</th>
+      <th scope="col">AM Dist%</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">1</td>
+      <td>IC1001</td>
+      <td>Pen</td>
+      <td>pcs</td>
+      <td>10.00</td>
+      <td>2</td>
+      <td>Store A</td>
+      <td>5%</td>
+      <td>19.00</td>
+    </tr>
+
+<!-- 
+    <tr>
+      <td scope="row">1</td>
+      <td>IC1001</td>
+      <td>Pen</td>
+      <td>pcs</td>
+      <td>10.00</td>
+      <td>2</td>
+      <td>Store A</td>
+      <td>5%</td>
+      <td>19.00</td>
+    </tr>
+    <tr>
+      <td scope="row">1</td>
+      <td>IC1001</td>
+      <td>Pen</td>
+      <td>pcs</td>
+      <td>10.00</td>
+      <td>2</td>
+      <td>Store A</td>
+      <td>5%</td>
+      <td>19.00</td>
+    </tr>
+    <tr>
+      <td scope="row">1</td>
+      <td>IC1001</td>
+      <td>Pen</td>
+      <td>pcs</td>
+      <td>10.00</td>
+      <td>2</td>
+      <td>Store A</td>
+      <td>5%</td>
+      <td>19.00</td>
+    </tr>
+    <tr>
+      <td scope="row">1</td>
+      <td>IC1001</td>
+      <td>Pen</td>
+      <td>pcs</td>
+      <td>10.00</td>
+      <td>2</td>
+      <td>Store A</td>
+      <td>5%</td>
+      <td>19.00</td>
+    </tr>
+    <tr>
+      <td scope="row">1</td>
+      <td>IC1001</td>
+      <td>Pen</td>
+      <td>pcs</td>
+      <td>10.00</td>
+      <td>2</td>
+      <td>Store A</td>
+      <td>5%</td>
+      <td>19.00</td>
+    </tr>
+    <tr>
+      <td scope="row">1</td>
+      <td>IC1001</td>
+      <td>Pen</td>
+      <td>pcs</td>
+      <td>10.00</td>
+      <td>2</td>
+      <td>Store A</td>
+      <td>5%</td>
+      <td>19.00</td>
+    </tr> -->
+
+  </tbody>
+</table>
+</div>
+  </div>
+
+
+<div class="container-fluid mt-0 bg-white">
+  <div class="row gap-2" style="align-items: stretch;">
+
+    <!-- Left Button Grid -->
+    <div class="col bg-info p-2" style="width: 50%;">
+      <div
+        class="d-grid"
+        style="
+          grid-template-columns: repeat(7, 1fr);
+          gap: 0.5rem;
+        "
+      >
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-plus-lg"></i><br /><small class="pareekshanam">New</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-search"></i><br /><small  class="pareekshanam">Search</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-save"></i><br /><small  class="pareekshanam">Save</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-printer"></i><br /><small  class="pareekshanam">Print</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-credit-card"></i><br /><small  class="pareekshanam">Card</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-pause-circle"></i><br /><small  class="pareekshanam">Hold</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-gift"></i><br /><small  class="pareekshanam">Redemption</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-calendar-check"></i><br /><small  class="pareekshanam">Reserve</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-person-circle"></i><br /><small  class="pareekshanam">Customer</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-people-fill"></i><br /><small  class="pareekshanam">Customers</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-list-ul"></i><br /><small  class="pareekshanam">Item Lists</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-receipt"></i><br /><small  class="pareekshanam">Bill details</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-arrow-left-right"></i><br /><small  class="pareekshanam">P.Switch</small>
+        </button>
+        <button class="btn btn-light text-wrap text-center p-2" style="min-width: 0;">
+          <i class="bi bi-upload"></i><br /><small class="pareekshanam">Load</small  >
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="col" style="width: 50%;">
+      <div class="row h-100">
+        <div class="col-6  p-2 text-black text-nowrap d-flex justify-content-around textsizeadjust" style="background-color: #99ff99;">
+
+            <div class="">
+            <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault">
+    Auto Price
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault">
+    Details
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault">
+    Items Added
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault">
+    Old Price
+  </label>
+</div>
+</div>
+
+<div>
+    <div class="d-flex justify-content-end mb-2">
+    <span>Total Points:</span>
+    <span>00</span>
+  </div>
+  <div class="d-flex justify-content-end mb-2">
+    <span>Privilege Points:</span>
+    <span>00</span>
+  </div>
+</div>
+
+        </div>
+        <div class="col-6 bg-info p-2 text-black text-nowrap d-flex flex-column align-items-end textsizeadjust2">
+            <div class="d-flex  mb-2">
+    <span>Amount:</span>
+    <span class="ps-3">00</span>
+  </div>
+  <div class="d-flex  mb-2">
+    <span>Discount %:</span>
+    <span class="ps-3">00</span>
+  </div>
+  <div class="d-flex  mb-2">
+    <span>Discount:</span>
+    <span class="ps-3">00</span>
+  </div>
+  <div class="d-flex  mb-2">
+    <span>No Of products:</span>
+    <span class="ps-3">00</span>
+  </div>
+  <div class="d-flex  mb-2">
+    <span>Amount:</span>
+    <span class="ps-3">00</span>
+  </div>
+  <div class="d-flex  mb-2">
+    <span>Amount:</span>
+    <span class="ps-3">00</span>
+  </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

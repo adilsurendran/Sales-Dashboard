@@ -1,0 +1,103 @@
+label {
+  white-space: nowrap;
+}
+
+.form-label {
+  width: 150px;
+  font-size: 1rem; /* default label size */
+}
+
+.form-group-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+.form-control-sm {
+  flex: 1;
+}
+
+.btn1 {
+  background-color: aqua;
+}
+
+.heightfixedtable{
+    height: 40vh;
+}
+
+@media (max-width: 991.98px) {
+  .form-label {
+    width: 100px;
+    font-size: 0.75rem; 
+  }
+  .btn-sm-text{
+    overflow: hidden;
+    font-size: xx-small;
+  }
+  
+}
+
+@media (max-width: 767.98px) {
+  .form-label {
+    width: 90px;
+    font-size: 0.65rem; 
+  }
+  .btn-sm-text{
+    overflow: hidden;
+
+  }
+}
+
+  /* Force buttons to shrink evenly without overflow */
+  .d-grid button {
+    white-space: normal; /* allow line breaks in button text */
+  }
+
+  /* Ensure the row keeps both columns side by side and full height */
+  .row.gap-2 {
+    flex-wrap: nowrap; /* prevent stacking */
+  }
+
+  /* Responsive: below 768px, stack columns vertically */
+  @media (max-width: 767.98px) {
+    .row.gap-2 {
+      flex-wrap: wrap; /* allow stacking on small */
+    }
+    .col.bg-info, .col {
+      width: 100% !important;
+    }
+  }
+
+  .btn {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  white-space: normal;     /* allow wrapping */
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .pareekshanam{
+        font-size: 6px;
+        text-align: start !important;
+    }
+    .textsizeadjust{
+        font-size: 12px;
+    }
+    .textsizeadjust2{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1320px) {
+    .pareekshanam{
+        font-size: 10px;
+    }
+    
+}
+
+
